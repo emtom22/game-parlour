@@ -3,136 +3,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Bootstrap 4 Starter Template</title>
-    <!-- My own CSS Sheets -->
-    <link rel="stylesheet" href="https://github.com/emtom22/cs50/blob/master/bs4/src/css/styles.css">
+	<title>Bootstrap 4 Starter Template</title>
+	<!-- My own CSS Sheets -->
+	<link rel="stylesheet" href="https://github.com/emtom22/cs50/blob/master/game-parlour/src/css/styles.css">
+    
+    <!-- Social Medi Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- SEO Metadata -->
-    <meta name="keywords" content="Games, Board games, board game cafe, mochi waffles, waffle sandwhiches, Kickstarter games"/>
-    <meta name="description" content="First Game Cafe in SF. Gather. Play. Eat."/>
+	<meta name="keywords"
+		content="Games, Board games, board game cafe, mochi waffles, waffle sandwhiches, Kickstarter games" />
+	<meta name="description" content="First Game Cafe in SF. Gather. Play. Eat." />
 
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar">
+	<div class="container-fluid text-center">
+			<a href="#" class="navbar-left logo">
+        <img src="https://ksr-ugc.imgix.net/assets/020/331/808/72a79cb0b4fe96b406550cc3c8fec7dc_original.jpg?crop=faces&w=1552&h=873&fit=crop&v=1519366454&auto=format&q=92&s=76406cc9d7a8f7b42cdf43269593a77e"
+                    height="180px"> </a>
+	</div>
+<nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center">
+	<button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+	<div class="navbar-collapse collapse justify-content-between align-items-center" id="collapsingNavbar2">
+		<ul class="navbar-nav mx-auto text-sm-center">
+			<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">FAQ</a>
+			</li>
+			<a class="nav-link" href="#">Events/Promos</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#">Reservations</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Gift Cards</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+					Menus
+				</a>
+				<div class="dropdown-menu text-center">
+					<a class="dropdown-item" href="#">Food Menu</a>
+					<a class="dropdown-item" href="#">Game Menu</a>
+				</div>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+			<li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a> </li>
+			<li class="nav-item"><a class="nav-link" href=""><i class="fa fa-instagram"></i></a> </li>
+            <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-yelp"></i></a> </li>
+		</ul>
+	</div>
+</nav>
 
-            <!-- <a class="navbar-brand" href="#">AutoImage</a> -->
-            <a href="#" class="navbar-left"><img
-                    src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.yourmomhatesthis.com%2Fimages%2F2016%2F12%2FCar-PNG-HD.png&f=1"
-                    height="40px"></a> Auto Image
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
-                            Products
-                        </a>
-
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Product 1</a>
-                            <a class="dropdown-item" href="#">Product 2</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Another Product</a>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-    </div>
-    <!-- <div class="container-fluid"> -->
-    git b
-        <h1 class="display-4">Simple. Elegant. Awesome.</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            ut aliquip ex ea commodo consequat. </p>
-
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
-    </div>
-    <!-- </div> -->
-
-
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Our Story</h5>
-                    <p class="card-text">Some quick example text to build on the card title</p>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4 mb-4">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Window Tinting</h5>
-                    <p class="card-text">Some quick example text to build on the card title</p>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Electronics</h5>
-                    <p class="card-text">Some quick example text to build on the card title</p>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mt-sm-4 mt-md-0 md-4">
-        <div class="col-sm-12 col-md-8">
-            <h3>An important heading</h3>
-            <p class="lead">A sort of important subheading can go here, which is larger and gray.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur.</p>
-        </div>
-
-        <div class="col-sm-12 col-md-4">
-            ..vertical navigation shortly..
-        </div>
-    </div>
-
-    <!-- JS to hide and show navbar -->
-    <script>
-        var prevScrollpos = window.pageYOffset;
+	</div>
+	<!-- JS to hide and show navbar -->
+	<script>
+		var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
@@ -142,19 +81,19 @@
             }
             prevScrollpos = currentScrollPos;
         }
-    </script>
+	</script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
 </body>
 
 </html>
