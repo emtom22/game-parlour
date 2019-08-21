@@ -25,6 +25,8 @@
 </head>
 
 <body>
+<div class="container-fluid" id="above-fold">
+
 	<div class="container-fluid text-center">
 		<a href="#" class="navbar-left logo">
 			<img src="https://ksr-ugc.imgix.net/assets/020/331/808/72a79cb0b4fe96b406550cc3c8fec7dc_original.jpg?crop=faces&w=1552&h=873&fit=crop&v=1519366454&auto=format&q=92&s=76406cc9d7a8f7b42cdf43269593a77e"
@@ -67,25 +69,14 @@
 						href=""><img class="mr-1" src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-gradient-transparent.png" height="20px"></a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href=""><i class="fa fa-yelp mr-1"></i></a> </li>
-				<li class="nav-item"><a class="nav-link" href=""><img src="https://user-images.githubusercontent.com/9140768/30163120-9bd90afe-938c-11e7-8141-4004c000eb27.png" height="20px" width="20px"></a></li>
+				<li class="nav-item"><a class="nav-link"
+						href=""><img src="https://user-images.githubusercontent.com/9140768/30163120-9bd90afe-938c-11e7-8141-4004c000eb27.png" height="20px" width="20px"></a>
+				</li>
 			</ul>
 		</div>
 	</nav>
-
 	</div>
-	<!-- JS to hide and show navbar -->
-	<script>
-		var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-	</script>
+	</div>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -99,5 +90,3 @@
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 	</script>
 </body>
-
-</html>
