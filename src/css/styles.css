@@ -9,3 +9,9 @@
 .fa-yelp{
   color: af0606;
 }
+
+#above-fold{
+  height: 900px;
+  background: url("https://cdn.vox-cdn.com/thumbor/iTpB5vHyripf0V7HuIxKfSlfGRo=/0x0:960x719/1200x800/filters:focal(404x284:556x436)/cdn.vox-cdn.com/uploads/chorus_image/image/59620787/31870749_1145783728897247_5848547680967458816_n.0.jpg");
+  background-size: 100% 100%;
+}
