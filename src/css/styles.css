@@ -10,8 +10,18 @@
   color: af0606;
 }
 
-#above-fold{
-  height: 700px;
-  background: url("../assets/game-parlour-wall.jpg");
-  background-size: 100% 100%;
+/* @media(min-width:576px){ */
+  #above-fold{
+    height: 500px;
+    background: url("../assets/game-parlour.jpg");
+    background-size: 100% 100%;
+  }
+/* } */
+ 
+@media(min-width:900px){
+  #above-fold{
+    height: 700px;
+    background: url("../assets/game-parlour-wall.jpg");
+    background-size: 100% 100%;
+  }
 }
