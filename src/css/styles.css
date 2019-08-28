@@ -10,6 +10,14 @@
   color: af0606;
 }
 
+.toggle-button{
+  /* background-color: black; */
+  background-image: url("../assets/logo.png");
+  background-size: 100% 100%;
+
+  /* color: black; */
+}
+
 /* @media(min-width:576px){ */
   #above-fold{
     height: 500px;
@@ -24,4 +32,20 @@
     background: url("../assets/game-parlour-wall.jpg");
     background-size: 100% 100%;
   }
+}
+.position-absolute {
+  bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.test {
+  position: relative;
+  bottom: 0;
+  /* margin-top: 20%; */
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
