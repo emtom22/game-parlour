@@ -14,7 +14,14 @@
   /* background-color: red; */
 }
 .card-faded{
-  opacity: .4;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  /* background-size: 100% 100%; */
+}
+
+.card-faded:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
 .toggle-button{
@@ -47,7 +54,7 @@
   left: 0;
   right: 0;
 }
-.test {
+/* .test {
   position: relative;
   bottom: 0;
   /* margin-top: 20%; */
@@ -55,4 +62,4 @@
   margin-right: auto;
   left: 0;
   right: 0;
-}
+} */
