@@ -10,6 +10,10 @@
   color: af0606;
 }
 
+.card-gather{
+  /* background-color: red; */
+}
+
 .toggle-button{
   /* background-color: black; */
   background-image: url("../assets/logo.png");
