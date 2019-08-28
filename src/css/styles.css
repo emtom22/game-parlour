@@ -13,6 +13,9 @@
 .card-gather{
   /* background-color: red; */
 }
+.card-faded{
+  opacity: .4;
+}
 
 .toggle-button{
   /* background-color: black; */
