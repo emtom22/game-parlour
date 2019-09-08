@@ -1,3 +1,23 @@
+
+/***Index Page CSS***/
+
+
+/*navbar customization*/
+#navCustom li a {
+  color: #e2be44;
+ }
+
+/*main page image*/
+.wallpaper{
+  height:600px;
+  background:url("https://lh3.googleusercontent.com/gU3bMLXzf6OKlGcQrKLoJt_BwGmQcOP11RiSRqA_chLLNATvqYNGQrlWPERzVbHafUBmQ4Rcp9HqRW4q2KqSuix5jwZfdLP1dfK50jVLrD40meWy7Fb8zwM0DsSG2-kp3d-RDL_9EQ=w2400") no-repeat center;
+  background-size:100% 100%;
+}
+
+
+
+/**/
+
 .fa-facebook{
   color: 3b5998;
 }
@@ -54,12 +74,3 @@
   left: 0;
   right: 0;
 }
-/* .test {
-  position: relative;
-  bottom: 0;
-  /* margin-top: 20%; */
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-} */
