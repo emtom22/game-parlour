@@ -29,21 +29,19 @@
 
 </head>
 
-
 <body>
     <div class="container">
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation new" method="post" action="/job" novalidate>
 
             <h1>Register:</h1>
-
-            <!-- One "tab" for each step in the form: -->
-            <div class="tab">
+            <form id="init-form">
                 <div class="form-group row justify-content-left">
-                    <label for="validationRequest" class="col-sm-2 col-form-label">Request Type</label>
+                    <label for="requestType" class="col-sm-2 col-form-label">Request Type</label>
 
                     <div class="col-sm-3">
-                        <select class="custom-select form-control" id="validationRequest" required>
-                            <option value="" selected></option>
+                        <select class="custom-select form-control" id="requestSelect"
+                            onChange="requestType('init-form')" autofocus required>
+                            <option value="" selected disabled></option>
                             <option value="req-reserve">Reservations</option>
                             <option value="req-game">Donate/Sell Games</option>
                             <option value="req-reserve">Rent Out Venue</option>
@@ -57,23 +55,20 @@
                             Please select request type
                         </div>
                     </div>
+
                 </div>
-                <!-- Following options are hidden or not based on reuest selection -->
-                <!-- Submenu: Reserve Inputs -->
-                <div class="form-group row justify-content-left">
-                    <label for="validationRequest" class="col-sm-2 col-form-label">Request Type</label>
-                </div>
-                <!-- Reservation Type dropdown: whole space event or table  -->
-                <!-- Number of people in party -->
-                <!-- Reservation Date -->
-                <!-- Reservation Time -->
+            </form>
+
+            <!-- Following options are hidden or not based on reuest selection -->
+            <!-- Submenu: Reserve Inputs -->
+            <!-- Reservation Type dropdown: whole space event or table  -->
+            <!-- Number of people in party -->
+            <!-- Reservation Date -->
+            <!-- Reservation Time -->
 
 
-                <!-- Submenu: Game Buy/Sell Inputs -->
-                <div class="form-group row justify-content-left">
-                    <label for="validationRequest" class="col-sm-2 col-form-label">Request Type</label>
-                </div>
-                <!-- Buy/Sell dropdown
+            <!-- Submenu: Game Buy/Sell Inputs -->
+            <!-- Buy/Sell dropdown
                 If buy
                     >> what game (later have API from board game geek)
                     >> Buying price
@@ -81,14 +76,11 @@
                     >> what game type
                     >> BGG link
                     >> selling price -->
-                <!-- Additional Comments -->
+            <!-- Additional Comments -->
 
 
-                <!-- Submenu: Suggestion Inputs -->
-                <div class="form-group row justify-content-left">
-                    <label for="validationRequest" class="col-sm-2 col-form-label">Request Type</label>
-                </div>
-                <!-- Suggestion Type: dropdown: Games, Menu, Event
+            <!-- Submenu: Suggestion Inputs -->
+            <!-- Suggestion Type: dropdown: Games, Menu, Event
                 always ask Why?
                 If games
                     >> game title
@@ -103,101 +95,9 @@
                     >> long text comments -->
 
 
-                <!-- Submenu: Other Inputs -->
-                <div class="form-group row justify-content-left">
-                    <label for="validationRequest" class="col-sm-2 col-form-label">Request Type</label>
-                </div>
-                <!-- Subject field -->
-                <!-- Free text comments -->
-
-            </div>
-            <div class="tab">
-                <h1>Contact Info:</h1>
-                <div class="form-group row justify-content-left">
-                    <label for="validationName" class="col-sm-2 col-form-label">Name</label>
-                    <div class="col-sm-2 mb-2">
-                        <input type="text" class="form-control" id="validationName" placeholder="First name" required>
-                        <div class="invalid-feedback">
-                            Please input name
-                        </div>
-                    </div>
-                    <div class="col-sm-3 mb-3">
-                        <input type="text" class="form-control" id="validationName" placeholder="Last name" required>
-                        <div class="invalid-feedback">
-                            Please input name
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group row justify-content-left">
-                    <label for="validationEmail" class="col-sm-3 col-form-label">Email</label>
-                    <div class="col-sm-3 mb-3">
-                        <input type="email" class="form-control" id="validationEmail" placeholder="name@example.com"
-                            required>
-                        <div class="invalid-feedback">
-                            Please input valid email address
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Submenu: Other Inputs -->
+            <!-- Subject field -->
+            <!-- Free text comments -->
 
 
-            <div class="tab">Login Info:
-                <p><input placeholder="Username..." oninput="this.className = ''"></p>
-                <p><input placeholder="Password..." oninput="this.className = ''"></p>
-            </div>
-
-            <div style="overflow:auto;">
-                <div style="float:right;">
-                    <button type="submit" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                    <button type="submit" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                </div>
-            </div>
-
-            <!-- Circles which indicates the steps of the form: -->
-            <div style="text-align:center;margin-top:40px;">
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-            </div>
-
-        </form>
-    </div>
-
-
-    <!-- My own JavaScript -->
-    <script src="js/contact-script.js"></script>
-
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
 </body>
