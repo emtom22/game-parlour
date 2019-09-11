@@ -36,7 +36,7 @@
             <h1>Request Form:</h1>
             <div class="form-group row justify-content-left">
                 <label for="type" class="col-sm-3 col-form-label">Request Type:</label>
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
                     <select class="custom-select form-control" id="requestType" onChange="requestSelect('init-form')"
                         autofocus required>
                         <option value="" selected disabled></option>
@@ -57,7 +57,7 @@
             <h2>Reservation Sub-menu</h2>
             <div class="form-group row justify-content-left">
                 <label for="party-size" class="col-sm-3 col-form-label">Party Size:</label>
-                <div class="col-sm-3">
+                <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <select class="custom-select form-control" id="party-size" autofocus required>
                         <option value="party-2" selected>2</option>
                         <option value="party-3">3</option>
@@ -73,52 +73,52 @@
             </div>
             <div class="form-row">
                 <label for="date-time" class="col-sm-3 col-form-label">Date/Time:</label>
-                <div class="col-sm-4 mb-3">
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
                     <input type="date" class="form-control">
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-md-3 col-lg-2">
                     <input type="time" class="form-control">
                 </div>
             </div>
             <h2>Buy/Sell Sub-menu</h2>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="buy-sell" id="buy" value="buy">
-                <label class="form-check-label" for="buy">
-                    I want to buy a game
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="buy-sell" value="buy">
+                    I want to BUY a game
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="buy-sell" id="sell" value="sell">
-                <label class="form-check-label" for="sell">
-                    I want to sell a game
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="buy-sell" value="sell">
+                    I want to SELL a game
                 </label>
             </div>
             <div class="form-group row justify-content-left">
                 <label for="game-name" class="col-sm-3 col-form-label">Game Title:</label>
-                <div class="col-sm-8 col-md-8 col-lg-8">
+                <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
                     <input type="text" id="game-name">
                 </div>
             </div>
             <div class="form-group row justify-content-left">
-                    <label for="game-type" class="col-sm-3 col-form-label">Game Type:</label>
-                    <div class="col-sm-2">
-                        <select class="custom-select form-control" id="game-type" autofocus required>
-                            <option value="" selected disabled></option>
-                            <option value="party">Party</option>
-                            <option value="strategy">Strategy</option>
-                            <option value="deception">Deception</option>
-                            <option value="co-op">Co-op</option>
-                        </select>
-                    </div>
+                <label for="game-type" class="col-sm-3 col-form-label">Game Type:</label>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <select class="custom-select form-control" id="game-type" autofocus required>
+                        <option value="" selected disabled></option>
+                        <option value="party">Party</option>
+                        <option value="strategy">Strategy</option>
+                        <option value="deception">Deception</option>
+                        <option value="co-op">Co-op</option>
+                    </select>
                 </div>
-            
+            </div>
+
             <div class="input-group">
-                
+
                 <label for="game-name" class="col-sm-3 col-form-label">Price</label>
-                <!-- <div class="col-sm-1"> -->
-                        <span class="input-group-addon">$</span>
-                    <input type="number" id="price" value="0" min ="0" max="100" step="1" class="form-control currency">
-                <!-- </div> -->
+                <div class="col-sm-3 col-md-2 col-lg-2 row justify-content-left">
+                    <span class="input-group-addon">$</span>
+                    <input type="number" id="price" value="0" min="0" max="100" step="1" class="form-control currency">
+                </div>
             </div>
             <div class="form-group row justify-content-left">
                 <label for="comments">Additional Comments:</label>
